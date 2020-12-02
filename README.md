@@ -1,2 +1,2 @@
 ## Gruvbox
-![alt text](../../screenshots/Gruvbox.png)
+![alt text](screenshot.png)

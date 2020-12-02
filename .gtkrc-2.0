@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/zodd/.gtkrc-2.0.mine"
-gtk-theme-name="gruvbox-theme"
+gtk-theme-name="gruvbox-theme-lighter"
 gtk-icon-theme-name="gruvbox-icons-lighter"
 gtk-font-name="Cantarell 9"
 gtk-cursor-theme-name="Breeze"

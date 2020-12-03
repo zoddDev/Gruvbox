@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/bin/neofetch --ascii $HOME/.config/neofetch/ascii --ascii_colors 5 --colors 2 2 7 2 2 7
+/bin/neofetch --backend kitty --source $HOME/.config/neofetch/image.png --size '180px' --colors 5 5 7 2 2 7

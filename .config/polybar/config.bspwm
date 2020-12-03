@@ -39,7 +39,7 @@ blue = #83a598
 
 [bar/example]
 width = 100%
-height = 22
+height = 18
 radius = 0.0
 fixed-center = true
 
@@ -59,10 +59,10 @@ font-0 = "Inconsolata CondensedBlack:size=12;3"
 font-1 = "SauceCodePro Nerd Font Mono:size=20;5"
 font-2 = "Material Icons:pixelsize=15;5"
 font-3 = "Sinji:pixelsize=15;5"
-font-4 = "Togalite medium:pixelsize=12;4"
+font-4 = "Togalite medium:pixelsize=11;2"
 
 ; MODULES SETUP
-modules-left = bspwm theme-swap
+modules-left = theme-swap bspwm kernel-name
 modules-center = windowtitle spotify
 modules-right = pacman-updates filesystem cpu memory volume date shutdown
 
@@ -73,30 +73,45 @@ modules-right = pacman-updates filesystem cpu memory volume date shutdown
 cursor-click = pointer
 cursor-scroll = pointer
 
+line-size = 2
+
+separator = %{F#665c54}|%{F-}
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/bspwm]
 type = internal/bspwm
+ws-icon-0 = TERM;%{F#b8bb26}term
+ws-icon-1 = WEB;%{F#fb4934}web
+ws-icon-2 = CODE;%{F#fabd2f}code
+ws-icon-3 = MISC;%{F#83a598}misc
+ws-icon-4 = EDIT;%{F#d3869b}edit
+ws-icon-5 = CHAT;%{F#8ec07c}chat
+ws-icon-6 = DISCORD;%{F#b8bb26}disc
+ws-icon-7 = MUSIC;%{F#fabd2f}mus
+ws-icon-default = ♟
 
-label-focused = %name%
-label-focused-background = ${colors.green}
-label-focused-underline= ${colors.primary}
-label-focused-foreground = ${colors.foreground-alt}
+label-focused = "%icon%@"
+;label-focused-background = #303543
+label-focused-underline= ${colors.white}
+label-focused-foreground = ${colors.foreground}
 label-focused-padding = 2
 
-label-occupied = %name%
-label-occupied-background = ${colors.background}
-label-occupied-foreground = ${colors.white}
+label-occupied = %icon%*
+;label-occupied-background = ${colors.background}
+label-occupied-foreground = #e5e9f0
 label-occupied-padding = 2
 
-label-urgent = %name%
-label-urgent-background = ${colors.yellow}
-label-urgent-foreground = ${colors.background}
+label-urgent = %icon%
+;label-urgent-background = ${colors.red}
+label-urgent-foreground = #e5e9f0
 label-urgent-padding = 2
 
-label-empty = %name% 
-label-empty-background = ${colors.background}
-label-empty-foreground = ${colors.white}
+label-empty = %icon% 
+;label-empty-background = ${colors.background}
+label-empty-foreground = #e5e9f0
 label-empty-padding = 2
+
 
 ; Separator in between workspaces
 label-separator = 
@@ -175,18 +190,29 @@ label-empty-background = ${colors.background}
 
 [module/theme-swap]
 type = custom/script
-exec = echo 
+exec = echo 
 interval = 100
 label = "  %output%  "
 
-format-background = ${colors.gray}
-format-foreground = ${colors.background}
+;format-background = ${colors.white}
+format-foreground = ${colors.white}
 
 click-left = $HOME/.config/polybar/scripts/theme-swap.sh
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+[module/kernel-name]
+type = custom/script
+exec = uname -r
+interval = 10000
+label = "   %output% "
+format-foreground = ${colors.white}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 [module/filesystem]
 type = internal/fs
+
 
 ; Mountpoints to display
 mount-0 = /
@@ -224,55 +250,58 @@ format-unmounted = <label-unmounted>
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = " %percentage_used%%"
+label-mounted = "  %percentage_used%% "
 
 ; Available tokens:
 ;   %mountpoint%
 ; Default: %mountpoint% is not mounted
 label-unmounted = %mountpoint%: not mounted
 label-unmounted-foreground = #55
+
+label-mounted-foreground = ${colors.blue}
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [module/pacman-updates]
 type = custom/script
 exec = $HOME/.config/polybar/scripts/pacman-updates.sh
 interval = 1000
-label = "   %output%  "
-format-foreground = ${colors.background}
-format-background = ${colors.green}
+label = "   %output% "
+format-foreground = ${colors.green}
+format-foreground-error = ${colors.red}
+;format-background = ${colors.green}
 click-left = kitty -e $SHELL -c 'sudo pacman -Syu'
 click-right = bspc rule -a \* -o state=floating ; sleep 0.015 ; kitty -e $SHELL -c 'yay -Qu | less'
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/windowtitle]
 type = internal/xwindow
 format = <label>
-format-background = ${colors.cyan}
-format-foreground = ${colors.background}
-format-padding = 4
+;format-background = ${colors.cyan}
+format-foreground = ${colors.cyan}
+format-padding = 1
 label = "  %title%"
-label-maxlen = 100
-label-empty = "  "
+label-maxlen = 50
+label-empty = "   free"
 label-separator = " "
-label-empty-foreground = ${colors.background}
+label-empty-foreground = ${colors.cyan}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/volume]
 type = internal/pulseaudio
-format-volume =  "<ramp-volume> <label-volume> "
+format-volume =  "<ramp-volume> <label-volume>"
 ramp-volume-0 =
-ramp-volume-0-font = 2
+ramp-volume-0-font = 1
 ramp-volume-1 =墳
-ramp-volume-1-font = 2
+ramp-volume-1-font = 1
 ramp-volume-2 =墳
-ramp-volume-2-font = 2
-format-volume-background = ${colors.yellow}
-format-volume-foreground = ${colors.background}
+ramp-volume-2-font = 1
+;format-volume-background = ${colors.cyan}
+format-volume-foreground = ${colors.cyan}
 format-volume-padding = 1
 
 format-muted = <label-muted>
-format-muted-background = ${colors.white} 	
-format-muted-foreground = ${colors.background}
+;format-muted-background = ${colors.white} 	
+format-muted-foreground = ${colors.white}
 label-muted ="  "
 format-muted-font = 2
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -325,14 +354,13 @@ format-disconnected-foreground = ${colors.background}
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix ="  "
+format-prefix ="   "
 format = <label>
-format-background = ${colors.aqua}
-format-foreground = ${colors.background}
-format-padding = 4
+;format-background = ${colors.pink}
+format-foreground = ${colors.pink}
+format-padding = 0
 
-exec = python3 $HOME/.config/polybar/modules/spotify/spotify_status.py -t 65 -qf '{artist}: {song}'
-format-underline = #1db954
+exec = python3 $HOME/.config/polybar/modules/spotify/spotify_status.py -t 50 -qf '{artist}: {song}'
 click-left = bspc desktop -f '^8' --follow
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/memory]
@@ -340,13 +368,13 @@ type = internal/memory
 ; Seconds to sleep between updates
 interval = 3
 
-label = " %percentage_used%%"
+label = "  %percentage_used%%"
 
 format-prefix-padding = 2
 format-prefix-font = 2
 format-prefix-foreground = #ffffff
-format-background = ${colors.background}
-format-foreground = ${colors.foreground}
+;format-background = ${colors.background}
+format-foreground = ${colors.pink}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [module/wired-network]
@@ -376,10 +404,10 @@ type = internal/cpu
 
 interval = 1
 format = <label>
-label = "   %percentage%%  "
+label = "  %percentage%% "
 
-format-background = ${colors.pink}
-format-foreground = ${colors.background}
+;format-background = ${colors.yellow}
+format-foreground = ${colors.yellow}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/date]
@@ -389,23 +417,23 @@ interval = 1
 date = 
 date-alt = "  﨟  %A, %b %d -"
 
-time = "  %I:%M %p "
+time = "  %I:%M %p  "
 time-alt = "%I:%M:%S %p  "
 
 ;format-prefix = ""
-format-prefix-padding = 2
-format-prefix-font = 2
+format-prefix-padding = 1
+format-prefix-font = 1
 format-prefix-foreground = #ffffff
-format-background = ${colors.background}
-format-foreground = ${colors.foreground}
+;format-background = ${colors.background}
+format-foreground = ${colors.white}
 
 label = %date% %time%
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/shutdown]
 type = custom/text
 content = "ﴚ"
-content-background = ${colors.red}
-content-foreground = ${colors.background}
+;content-background = ${colors.red}
+content-foreground = ${colors.red}
 content-padding = 2
 click-left = $HOME/.config/polybar/scripts/rofi-poweroff.sh
 click-right = $HOME/.config/polybar/scripts/rofi-poweroff.sh 

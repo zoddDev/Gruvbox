@@ -13,7 +13,7 @@ separator_height = 2
 padding = 8
 horizontal_padding = 13
 frame_width = 8
-frame_color = "#282828"
+frame_color = "#1D2021"
 separator_color = "#32302f"
 
 font = Inconsolata Bold 10
@@ -55,20 +55,20 @@ context = ctrl+shift+period
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#282828"
+    background = "#1D2021"
     foreground = "#ebdbb2"
     timeout = 5 
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#282828"
+    background = "#1D2021"
     foreground = "#ebdbb2"
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_critical]
-    background = "#282828"
+    background = "#1D2021"
     foreground = "#ebdbb2"
     timeout = 120

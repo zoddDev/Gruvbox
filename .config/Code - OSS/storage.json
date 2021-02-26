@@ -2,6 +2,12 @@
     "telemetry.machineId": "e6d097e8d681b4cd087e8a0455801539c217426734707c60b7b658907c0f2323",
     "openedPathsList": {
         "workspaces3": [
+            "file:///home/zodd/Dropbox/Programming/TypeScript",
+            {
+                "id": "1c6e10552366b30a1381887b484014cb",
+                "configURIPath": "file:///home/zodd/typescript.code-workspace"
+            },
+            "file:///home/zodd/Downloads/git-downloads/AprendeAyudando",
             "file:///home/zodd/Dropbox/Programming/Python/japanese-quiz",
             "file:///home/zodd/Dropbox/Programming/C/Stack",
             "file:///home/zodd/Downloads/git-downloads/zdd-shell",
@@ -95,6 +101,39 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "fsPath": "/home/zodd/Dropbox/Programming/TypeScript",
+                                        "external": "file:///home/zodd/Dropbox/Programming/TypeScript",
+                                        "path": "/home/zodd/Dropbox/Programming/TypeScript",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Dropbox/Programming/TypeScript"
+                                },
+                                {
+                                    "id": "openRecentWorkspace",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "path": "/home/zodd/typescript.code-workspace",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/typescript (Workspace)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/zodd/Downloads/git-downloads/AprendeAyudando",
+                                        "path": "/home/zodd/Downloads/git-downloads/AprendeAyudando",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/git-downloads/AprendeAyudando"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/zodd/Dropbox/Programming/Python/japanese-quiz",
                                         "path": "/home/zodd/Dropbox/Programming/Python/japanese-quiz",
                                         "scheme": "file"
@@ -167,39 +206,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Dropbox/Programming/Go/1"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/zodd/Dropbox/Programming/Clojure/hello-world",
-                                        "path": "/home/zodd/Dropbox/Programming/Clojure/hello-world",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Dropbox/Programming/Clojure/hello-world"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/zodd/Dropbox/Programming/Haskell/Tests",
-                                        "path": "/home/zodd/Dropbox/Programming/Haskell/Tests",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Dropbox/Programming/Haskell/Tests"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/zodd/Documents/git-lab/zodd18.github.io",
-                                        "path": "/home/zodd/Documents/git-lab/zodd18.github.io",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/git-lab/zodd18.github.io"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -427,8 +433,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder",
-                        "enabled": false
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -648,7 +653,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel"
+                                    "label": "Show &&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -822,8 +828,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -832,8 +837,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1149,8 +1153,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1688,16 +1691,17 @@
     "themeBackground": "#1d2021",
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/zodd/.config/Code - OSS/Backups/1599415170678",
+            "folder": "file:///home/zodd/Dropbox/Programming/TypeScript",
+            "backupPath": "/home/zodd/.config/Code - OSS/Backups/5da9f1ae8dfa27f8ae0735919d1293b7",
             "uiState": {
                 "mode": 0,
-                "x": 448,
-                "y": 177,
-                "width": 1024,
-                "height": 768
+                "x": 25,
+                "y": 82,
+                "width": 1870,
+                "height": 973
             }
         },
         "openedWindows": []
     },
-    "pickerWorkingDir": "/home/zodd/Dropbox/Programming/C"
+    "pickerWorkingDir": "/home/zodd/Dropbox/Programming"
 }

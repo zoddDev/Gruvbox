@@ -9,7 +9,7 @@
     <property name="NonModalCommitCustomization.IsApplied" value="true" />
     <property name="SettingsSearchHistory" value="close tab&#10;icon&#10;ic&#10;italic&#10;dracu" />
     <property name="UITheme.relaunch" value="true" />
-    <property name="appcds.runOnSecondStart" value="IC-202.6948.69-48fe56c745178f1a1b5a589b8cf1adcd953050225aef12976f6c4eb24cbd1f71" />
+    <property name="appcds.runOnSecondStart" value="IC-202.7660.26-c0072c7a4dc416c316ec31c96cf1d7921e7ff5a254d335cb26bf57593e2ec66b" />
     <property name="ask.about.ctrl.y.shortcut" value="true" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Sources" />
@@ -21,16 +21,16 @@
     <property name="ide.self.update.started.for.build" value="IC-202.6397.94" />
     <property name="ideavim.statistics.timestamp" value="1592494439013" />
     <property name="ignore.vm.options.env.vars" value="true" />
-    <property name="installed.kotlin.plugin.version" value="1.4.0-release-IJ2020.2-1" />
+    <property name="installed.kotlin.plugin.version" value="1.4.10-release-IJ2020.2-1" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="kotlin.plugin.releaseDate" value="1.4.0-release-IJ2020.2-1:2020-08-17" />
+    <property name="kotlin.plugin.releaseDate" value="1.4.10-release-IJ2020.2-1:2020-09-10" />
     <property name="lastSeenTip" value="CreateTargetTag.html" />
     <property name="lastTimeTipsWereShown" value="1592356475560" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/git-downloads/BetterGameEngine" />
     <property name="mt.showInstallAtom" value="true" />
     <property name="packagesearch.endpoint.url.fulltext" value="https://package-search.services.jetbrains.com/api/search/idea/fulltext" />
     <property name="packagesearch.endpoint.url.suggest" value="https://package-search.services.jetbrains.com/api/search/idea/suggest" />
-    <property name="packagesearch.status.updated.ts" value="1598962715275" />
+    <property name="packagesearch.status.updated.ts" value="1608831646034" />
     <property name="project.wizard.group" value="JAVA_MODULE" />
     <property name="seenTips" value="CreateTargetTag.html" />
     <property name="selected.color.option.type" value="ABSTRACT_CLASS_NAME_ATTRIBUTES" />

@@ -4,7 +4,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/scenes/Scene0.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="320">
               <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
             </state>
           </provider>
@@ -27,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/BEGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="460">
               <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
             </state>
           </provider>
@@ -67,11 +67,10 @@
       </set>
     </option>
   </component>
-  <component name="ProjectFrameBounds" x="20" y="52" width="1860" height="988" />
+  <component name="ProjectFrameBounds" x="20" y="52" width="1874" height="980" extendedState="6" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,6 +106,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -118,9 +118,8 @@
     <option name="mySelectedTabIndex" value="1" />
   </component>
   <component name="ToolWindowManager">
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14136414" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1431694" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Commit" order="3" weight="0.32972974" />
@@ -265,14 +264,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/scenes/Scene0.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="320">
           <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/BEGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="460">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
         </state>
       </provider>

@@ -16,13 +16,49 @@
         </entry>
         <entry key="$USER_HOME$/CLionProjects/Executer">
           <value>
-            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1djjsuJFHap7RWDtCin5sTgb0tH">
+            <RecentProjectMetaInfo projectWorkspaceId="1djjsuJFHap7RWDtCin5sTgb0tH">
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="CL-201.7846.88" />
-              <option name="buildTimestamp" value="1591174747588" />
-              <frame x="12" y="50" width="1892" height="1014" />
+              <option name="buildTimestamp" value="1591174757891" />
+              <frame x="20" y="48" width="1876" height="1008" />
               <option name="productionCode" value="CL" />
-              <option name="projectOpenTimestamp" value="1594671072482" />
+              <option name="projectOpenTimestamp" value="1608559762851" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/CLionProjects/CommunityProject">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1lyCEjNyJB8gobb5dZu3BilbVdG">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-201.7846.88" />
+              <option name="buildTimestamp" value="1591174781718" />
+              <frame x="20" y="48" width="1876" height="1008" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1608639229838" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/CLionProjects/wxWidgetsHelloWorld">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1m133UbVMS9ta1p7DE5WmJSNGh6">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-201.7846.88" />
+              <option name="buildTimestamp" value="1591174781718" />
+              <frame x="20" y="48" width="1876" height="1008" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1608647070595" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/CLionProjects/wxMVC">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1m133UbVMS9ta1p7DE5WmJSNGh6">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-201.7846.88" />
+              <option name="buildTimestamp" value="1591174778094" />
+              <frame x="20" y="48" width="1876" height="1008" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1608732283685" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -31,6 +67,9 @@
     <option name="lastProjectLocation" value="$USER_HOME$/CLionProjects" />
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/CLionProjects/wxMVC" />
+        <option value="$USER_HOME$/CLionProjects/wxWidgetsHelloWorld" />
+        <option value="$USER_HOME$/CLionProjects/CommunityProject" />
         <option value="$USER_HOME$/CLionProjects/Executer" />
         <option value="$USER_HOME$/CLionProjects/Tests" />
       </list>

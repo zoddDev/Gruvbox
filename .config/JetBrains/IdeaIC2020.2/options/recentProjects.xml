@@ -75,13 +75,13 @@
         </entry>
         <entry key="$USER_HOME$/Downloads/git-downloads/BetterGameEngine">
           <value>
-            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1etwsMhHyVPtL8stxYw2labDtGY">
+            <RecentProjectMetaInfo projectWorkspaceId="1etwsMhHyVPtL8stxYw2labDtGY">
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="IC-202.6948.69" />
-              <option name="buildTimestamp" value="1598304141357" />
-              <frame x="20" y="52" width="1860" height="988" />
+              <option name="build" value="IC-202.7660.26" />
+              <option name="buildTimestamp" value="1601973161307" />
+              <frame x="20" y="52" width="1874" height="980" extendedState="6" />
               <option name="productionCode" value="IC" />
-              <option name="projectOpenTimestamp" value="1599425605793" />
+              <option name="projectOpenTimestamp" value="1608831647089" />
             </RecentProjectMetaInfo>
           </value>
         </entry>

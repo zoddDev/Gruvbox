@@ -485,13 +485,6 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "workbench.action.splitEditorInGroup",
-                                    "label": "Split in &&Group"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "workbench.action.editorLayoutSingle",
                                     "label": "&&Single"
                                 },
@@ -584,7 +577,8 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap"
+                        "label": "&&Word Wrap",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.toggleMinimap",
@@ -611,7 +605,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1486,17 +1481,17 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#292828",
+    "themeBackground": "#1d2021",
     "windowsState": {
         "lastActiveWindow": {
             "folder": "file:///home/zodd/Dropbox/Programming/Maude",
             "backupPath": "/home/zodd/.config/Code/Backups/b3e372e9263eb7973f4bd0d9960410ae",
             "uiState": {
                 "mode": 1,
-                "x": 20,
-                "y": 64,
-                "width": 2520,
-                "height": 996
+                "x": 22,
+                "y": 66,
+                "width": 1500,
+                "height": 992
             }
         },
         "openedWindows": []
@@ -1504,14 +1499,14 @@
     "windowSplash": {
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#a89984",
-            "background": "#292828",
-            "editorBackground": "#292828",
-            "titleBarBackground": "#292828",
-            "activityBarBackground": "#292828",
-            "sideBarBackground": "#292828",
-            "statusBarBackground": "#292828",
-            "statusBarNoFolderBackground": "#292828"
+            "foreground": "#ebdbb2",
+            "background": "#1d2021",
+            "editorBackground": "#1d2021",
+            "titleBarBackground": "#1d2021",
+            "activityBarBackground": "#1d2021",
+            "sideBarBackground": "#1d2021",
+            "statusBarBackground": "#1d2021",
+            "statusBarNoFolderBackground": "#1d2021"
         },
         "layoutInfo": {
             "sideBarSide": "left",

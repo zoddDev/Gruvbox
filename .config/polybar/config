@@ -197,7 +197,7 @@ label = "  %output%  "
 ;format-background = ${colors.white}
 format-foreground = ${colors.white}
 
-click-left = $HOME/.config/polybar/scripts/theme-swap.sh
+click-left = ~/.scripts/theme-swap/theme-swap.sh -r
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;

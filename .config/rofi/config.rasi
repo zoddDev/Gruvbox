@@ -145,3 +145,5 @@ kb-row-down:                    "Down,Alt+j";
       sorting-method:    "name";
   }
 }
+
+@import "~/.config/rofi/theme.rasi"
